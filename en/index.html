@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karakaya — Airport & Chauffeur Service Vienna</title>
+  <meta name="description" content="Karakaya Private Chauffeur & Taxi — Airport Transfer, Chauffeur Service, Taxi in Vienna. Online payment available.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Airport Transfer</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Booking</a>
+        <a href="kontakt.html">Contact</a>
+        <a href="impressum.html">Imprint</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+      <!-- ← Wird automatisch gefüllt! -->
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('../images/logo-black.jpg') center calc(40% + top) / 70% auto no-repeat;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Karakaya — Your Exclusive Chauffeur & Airport Transfer in Vienna</h1>
+          <p class="lead">Mercedes S / E / V Class • Reliable • Punctual • 24/7</p>
+          <p>Welcome to Karakaya, your premium partner for airport transfers and chauffeur services in Vienna. With modern Mercedes vehicles and experienced, professional drivers, we offer you maximum comfort and safety for every journey. Whether business or leisure — we ensure you arrive punctually and relaxed at your destination. Book now easily online or contact us by phone. Our service is available around the clock.</p>
+
+          <hr>
+
+          <div class="cta-container">
+            <a href="buchung.html" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <p><strong>Cookies</strong> — We use cookies to optimize. <a href="impressum.html">More info</a></p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-reject" id="cookieReject">Reject</button>
+      <button class="cookie-btn cookie-btn-settings" id="cookieSettings">Settings</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">OK</button>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+      <h2>Cookie Settings</h2>
+      
+      <div class="cookie-setting cookie-setting-required">
+        <div class="cookie-setting-info">
+          <h3>Essential Cookies</h3>
+          <p>Required for basic website functionality</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Analytics Cookies</h3>
+          <p>Help us understand how you use our website</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Marketing Cookies</h3>
+          <p>Used to show you personalized advertising</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-buttons">
+        <button class="cookie-modal-btn cookie-modal-btn-close" id="cookieModalClose">Cancel</button>
+        <button class="cookie-modal-btn cookie-modal-btn-save" id="cookieModalSave">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Accepted Payment Methods:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Cash Payment">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>נהג פרטי — Karakaya ווינה</title>
+  <meta name="description" content="שירות נהג פרטי בווינה עם Mercedes S, E ו-V Class.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="flughafen.html">הובלה משדה התעופה</a>
+        <a href="chauffeur.html">נהג פרטי</a>
+        <a href="taxi.html">טקסי</a>
+        <a href="buchung.html">הזמנה</a>
+        <a href="kontakt.html">יצירת קשר</a>
+        <a href="impressum.html">מידע</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="בחר שפה">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/chauffeur.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/chauffeur.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/chauffeur.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/chauffeur.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="./chauffeur.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>נהג פרטי וכלים</h1>
+        <p>שירות נהג בלעדי לווינה ולכל אוסטריה. הזמן נהג מקצועי לאירועים עסקיים, חגיגות או סיורים בעיר.</p>
+
+        <h2>שירות הנהג הפרטי שלנו</h2>
+        <p>שירות הנהג הפרימיום שלנו מציע לך גמישות מקסימלית לכל צרכי התחבורה שלך. בין אם זה פגישה עסקית, ערב בעיר או סיורים רב-ימיים — נהגים ניסיוני שלנו הם דיסקרטיים, אמינים ומבטיחים נוחות מוחלטת.</p>
+
+        <hr>
+
+        <h2>צי הרכב</h2>
+        <ul>
+          <li><strong>Mercedes S-Class:</strong> פאר אולטימטיבי לנסיעות בלעדיות</li>
+          <li><strong>Mercedes E-Class:</strong> נוח ואלגנטי לאירועים עסקיים</li>
+          <li><strong>Mercedes V-Class:</strong> פסיח לקבוצות ונסיעות ארוכות</li>
+        </ul>
+
+        <hr>
+
+        <h2>שירותים</h2>
+        <ul>
+          <li>נהגים מקצועיים, דיסקרטיים ומנומסים</li>
+          <li>איסוף בזמן לשעה המתוכננת שלך</li>
+          <li>הזמנות שעתיות גמישות מ-1 שעה</li>
+          <li>נהגים דוברי גרמנית ואנגלית</li>
+          <li>לבקשות מיוחדות: שאל על התאמות אישיות</li>
+        </ul>
+
+        <h2>הזמן שירות נהג</h2>
+        <p>הזמן ישירות באינטרנט או צור איתנו קשר לבקשות מותאמות. כל המחירים שקופים ואין דמים נסתרים.</p>
+        
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">הזמן עכשיו</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

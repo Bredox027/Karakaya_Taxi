@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Karakaya Вена</title>
+  <meta name="description" content="Контакты Karakaya Private Chauffeur & Taxi в Вене.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="flughafen.html">Трансфер из аэропорта</a>
+        <a href="chauffeur.html">Личный водитель</a>
+        <a href="taxi.html">Такси</a>
+        <a href="buchung.html">Бронирование</a>
+        <a href="kontakt.html">Контакты</a>
+        <a href="impressum.html">Информация</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Выбрать язык">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/kontakt.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/kontakt.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="./kontakt.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/kontakt.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/kontakt.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h1>Контакты</h1>
+          <p>Есть ли у вас вопросы о наших услугах или вы хотите подать специальный запрос? Не стесняйтесь связаться с нами — наша команда доступна для вас 24/7.</p>
+
+          <h2>Контактная информация</h2>
+          <p><strong>Телефон:</strong> <a href="tel:+4368120447876">+43 681 2044 7876</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+          <p><strong>Доступность:</strong> 24/7</p>
+
+          <hr>
+
+          <h2>Быстрый ответ</h2>
+          <p>По всем вопросам трансфера из аэропорта, услуг водителя или специальных поездок мы здесь для вас. Позвоните нам или отправьте электронное письмо — мы ответим как можно скорее!</p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps?q=vienna+airport&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

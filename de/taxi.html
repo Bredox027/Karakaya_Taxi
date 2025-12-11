@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxi & Sonderfahrten — Karakaya Wien</title>
+  <meta name="description" content="Taxi und Sonderfahrten in Wien mit Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Flughafenfahrt</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Buchung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Taxi & Sonderfahrten</h1>
+        <p>Flexible Taxiservices und Sonderfahrten für individuelle Anforderungen. Wir fahren Sie überall hin — ob Stadtrundfahrt, Heiratstransport oder mehrfache Haltestellen.</p>
+
+        <h2>Unsere Taxi- und Sonderfahrten-Angebote</h2>
+        <ul>
+          <li><strong>Stadtrundfahrten:</strong> Erkunden Sie Wien mit komforthaften Transfers an alle Sehenswürdigkeiten</li>
+          <li><strong>Hochzeits- und Eventfahrten:</strong> Eleganter Transport für Ihre besonderen Anlässe</li>
+          <li><strong>Mehrstopps-Touren:</strong> Besuchen Sie mehrere Orte mit flexiblen Haltestopps</li>
+          <li><strong>Geschäftsfahrten:</strong> Zuverlässige Transporte für Geschäftsreisen innerhalb und außerhalb Wiens</li>
+          <li><strong>Unterwegs-Besorgungen:</strong> Fahrer und Fahrzeug für Ihre Einkaufs- und Besorgungsfahrten</li>
+          <li><strong>Maßgeschneiderte Anfragen:</strong> Wir bieten Lösungen für fast alle Transportbedürfnisse</li>
+        </ul>
+
+        <hr>
+
+        <h2>Wie funktioniert es?</h2>
+        <p>Beschreiben Sie Ihre Anfrage einfach im Buchungsformular oder kontaktieren Sie uns direkt per Telefon oder Email. Unsere Spezialisten werden Ihnen ein maßgeschneidertes Angebot unterbreiten.</p>
+
+        <h2>Kontakt für Sonderanfragen</h2>
+        <p><strong>Telefon:</strong> <a href="tel:+4368120447876">+43 681 2044 7876</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+        <p>Wir freuen uns auf Ihre Anfrage!</p>
+
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">Jetzt buchen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Akzeptierte Zahlungsmethoden:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Barzahlung">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

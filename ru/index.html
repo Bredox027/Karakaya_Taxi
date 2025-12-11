@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karakaya — Аэропорт и услуги водителя в Вене</title>
+  <meta name="description" content="Karakaya Private Chauffeur & Taxi — Трансфер из аэропорта, услуги водителя, такси в Вене. Онлайн-оплата.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="flughafen.html">Трансфер из аэропорта</a>
+        <a href="chauffeur.html">Личный водитель</a>
+        <a href="taxi.html">Такси</a>
+        <a href="buchung.html">Бронирование</a>
+        <a href="kontakt.html">Контакты</a>
+        <a href="impressum.html">Информация</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+      <!-- ← Wird automatisch gefüllt! -->
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('../images/logo-black.jpg') center calc(40% + top) / 70% auto no-repeat;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Karakaya — Ваш эксклюзивный водитель и трансфер из аэропорта в Вене</h1>
+          <p class="lead">Mercedes S / E / V Класс • Надежность • Пунктуальность • 24/7</p>
+          <p>Добро пожаловать в Karakaya, вашего премиум-партнера по трансферам из аэропорта и услугам водителя в Вене. С современными автомобилями Mercedes и опытными профессиональными водителями мы предлагаем вам максимальный комфорт и безопасность для каждой поездки. Будь то деловая поездка или отдых — мы обеспечиваем, чтобы вы прибыли вовремя и расслабленно в пункт назначения. Забронируйте прямо сейчас онлайн или свяжитесь с нами по телефону. Наш сервис доступен круглосуточно.</p>
+
+          <hr>
+
+          <div class="cta-container">
+            <a href="buchung.html" class="btn">Забронировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <p><strong>Cookies</strong> — Мы используем cookies для оптимизации. <a href="impressum.html">Подробнее</a></p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-reject" id="cookieReject">Отклонить</button>
+      <button class="cookie-btn cookie-btn-settings" id="cookieSettings">Параметры</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">OK</button>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+      <h2>Настройки cookie</h2>
+      
+      <div class="cookie-setting cookie-setting-required">
+        <div class="cookie-setting-info">
+          <h3>Необходимые файлы cookie</h3>
+          <p>Требуется для базовой функциональности веб-сайта</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Аналитические файлы cookie</h3>
+          <p>Помогают нам понять, как вы используете наш веб-сайт</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Маркетинговые файлы cookie</h3>
+          <p>Используются для показа персонализированной рекламы</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-buttons">
+        <button class="cookie-modal-btn cookie-modal-btn-close" id="cookieModalClose">Отмена</button>
+        <button class="cookie-modal-btn cookie-modal-btn-save" id="cookieModalSave">Сохранить</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Принимаемые способы оплаты:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Наличные">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

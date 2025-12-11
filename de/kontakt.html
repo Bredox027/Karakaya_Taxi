@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — Karakaya Wien</title>
+  <meta name="description" content="Kontakt zu Karakaya Private Chauffeur & Taxi in Wien.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Flughafenfahrt</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Buchung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h1>Kontakt</h1>
+          <p>Haben Sie Fragen zu unseren Services oder möchten Sie eine Sonderanfrage stellen? Kontaktieren Sie uns gerne — unser Team steht Ihnen 24/7 zur Verfügung.</p>
+
+          <h2>Kontaktinformationen</h2>
+          <p><strong>Telefon:</strong> <a href="tel:+4368120447876">+43 681 2044 7876</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+          <p><strong>Verfügbarkeit:</strong> 24/7</p>
+
+          <hr>
+
+          <h2>Schnelle Antwort</h2>
+          <p>Bei allen Fragen rund um Flughafentransfers, Chauffeurservice oder Sonderfahrten sind wir für Sie da. Rufen Sie an oder schreiben Sie eine Email — wir antworten schnellstmöglich!</p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps?q=vienna+airport&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Akzeptierte Zahlungsmethoden:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Barzahlung">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

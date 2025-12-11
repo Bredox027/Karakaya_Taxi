@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הזמנה — Karakaya ווינה</title>
+  <meta name="description" content="הזמן את ההובלה או השירות של הנהג אצל Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="flughafen.html">הובלה משדה התעופה</a>
+        <a href="chauffeur.html">נהג פרטי</a>
+        <a href="taxi.html">טקסי</a>
+        <a href="buchung.html">הזמנה</a>
+        <a href="kontakt.html">יצירת קשר</a>
+        <a href="impressum.html">מידע</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="בחר שפה">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/buchung.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/buchung.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/buchung.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/buchung.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="./buchung.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>הזמנה</h1>
+        <p>מלא את הטופס כדי להזמין את ההובלה שלך או את שירות הנהג.</p>
+
+        <div class="booking-container">
+          <form id="bookingForm">
+            <fieldset>
+              <legend>פרטי הנסיעה</legend>
+              
+              <label for="rideType">סוג הנסיעה *</label>
+              <select id="rideType" required>
+                <option value="">— בחר בבקשה —</option>
+                <option value="flughafen">הובלה משדה התעופה</option>
+                <option value="chauffeur">נהג פרטי (הזמנה לפי שעה)</option>
+                <option value="taxi">טקסי / בקשה מיוחדת</option>
+              </select>
+
+              <label for="pickup">מקום הסיור *</label>
+              <input id="pickup" type="text" placeholder="לדוגמה: Stephansplatz 1" required>
+
+              <label for="pickupZip">מיקוד מקום הסיור *</label>
+              <input id="pickupZip" type="text" placeholder="לדוגמה: 1010" pattern="[0-9]{4}" required>
+
+              <label for="dropoff">יעד הנסיעה *</label>
+              <input id="dropoff" type="text" placeholder="לדוגמה: שדה התעופה בווינה" required>
+
+              <label for="dropoffZip">מיקוד יעד הנסיעה *</label>
+              <input id="dropoffZip" type="text" placeholder="לדוגמה: 1300" pattern="[0-9]{4}" required>
+
+              <div class="row">
+                <div>
+                  <label for="date">תאריך *</label>
+                  <input id="date" type="date" required>
+                </div>
+                <div>
+                  <label for="time">זמן *</label>
+                  <input id="time" type="time" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="pax">נוסעים *</label>
+                  <input id="pax" type="number" min="1" value="1" required>
+                </div>
+                <div>
+                  <label for="luggage">מזוודות</label>
+                  <input id="luggage" type="number" min="0" value="0">
+                </div>
+              </div>
+
+              <label for="flight">מספר טיסה / רכבת (אופציונלי)</label>
+              <input id="flight" type="text" placeholder="לדוגמה: OS1234 או HB1234">
+
+              <label for="childseat">צריך כסא ילד? *</label>
+              <select id="childseat" required>
+                <option value="">— בחר בבקשה —</option>
+                <option value="nein">לא</option>
+                <option value="ja">כן (כסא מרים)</option>
+              </select>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>מידע אישי</legend>
+
+              <label for="name">שם וחי משפחה *</label>
+              <input id="name" type="text" placeholder="לדוגמה: דוד כהן" required>
+
+              <label for="phone">טלפון *</label>
+              <input id="phone" type="tel" placeholder="לדוגמה: +43681..." required>
+
+              <label for="email">דוא"ל *</label>
+              <input id="email" type="email" placeholder="לדוגמה: firstname@example.com" required>
+
+              <label for="notes">הערות</label>
+              <textarea id="notes" rows="3" placeholder="מידע נוסף..."></textarea>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>תשלום ומחיר</legend>
+
+              <label for="payment">תשלום *</label>
+              <select id="payment" required>
+                <option value="">— בחר בבקשה —</option>
+                <option value="online">תשלום מקוון (כרטיס אשראי / Apple Pay / Google Pay)</option>
+                <option value="card">תשלום כרטיס עם הנהג</option>
+                <option value="cash">תשלום במזומן</option>
+              </select>
+
+              <div class="price-box" id="priceBox">מחיר: —</div>
+
+              <div class="actions">
+                <button type="button" class="btn" id="calculateBtn">חשב מחיר</button>
+                <button type="submit" class="btn primary" id="bookBtn">הזמן ותשלם</button>
+              </div>
+
+              <div id="formMsg" class="form-msg"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

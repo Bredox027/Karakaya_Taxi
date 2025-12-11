@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>جهات الاتصال — Karakaya فيينا</title>
+  <meta name="description" content="جهات الاتصال بـ Karakaya Private Chauffeur & Taxi في فيينا.">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <style>
+    html { direction: rtl; }
+    body { direction: rtl; text-align: right; }
+    .nav { flex-direction: row-reverse; }
+    .lang-switch { flex-direction: row-reverse; }
+  </style>
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="flughafen.html">نقل المطار</a>
+        <a href="chauffeur.html">سائق خاص</a>
+        <a href="taxi.html">سيارة أجرة</a>
+        <a href="buchung.html">الحجز</a>
+        <a href="kontakt.html">جهات الاتصال</a>
+        <a href="impressum.html">معلومات</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="تغيير اللغة">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/kontakt.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/kontakt.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/kontakt.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="./kontakt.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/kontakt.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h1>جهات الاتصال</h1>
+          <p>هل لديك أسئلة حول خدماتنا أو تريد تقديم طلب خاص؟ لا تتردد في الاتصال بنا — فريقنا متاح لك 24/7.</p>
+
+          <h2>معلومات الاتصال</h2>
+          <p><strong>الهاتف:</strong> <a href="tel:+4368120447876"><bdi>+43 681 2044 7876</bdi></a></p>
+          <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+          <p><strong>التوفر:</strong> 24/7</p>
+
+          <hr>
+
+          <h2>الرد السريع</h2>
+          <p>بخصوص جميع أسئلتك حول نقل المطار أو خدمة السائق أو الرحلات الخاصة، نحن هنا لك. اتصل بنا أو أرسل بريداً إلكترونياً — سنرد في أسرع وقت ممكن!</p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps?q=vienna+airport&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

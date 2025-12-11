@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karakaya — שירותי שוֹפֵר וְהַעברָה מִשְׁדֵה־הַתְעוּפָה בְווִיֶּנָה</title>
+  <meta name="description" content="Karakaya Private Chauffeur & Taxi — הובלה משדה התעופה, שירותי נהג, טקסי בווינה. תשלום מקוון.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="flughafen.html">הובלה משדה התעופה</a>
+        <a href="chauffeur.html">נהג פרטי</a>
+        <a href="taxi.html">טקסי</a>
+        <a href="buchung.html">הזמנה</a>
+        <a href="kontakt.html">יצירת קשר</a>
+        <a href="impressum.html">מידע</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+      <!-- ← Wird automatisch gefüllt! -->
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('../images/logo-black.jpg') center calc(40% + top) / 70% auto no-repeat;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Karakaya — השוֹפֵר הבלעדי שלך וְהַעברָה מִשְׁדֵה־הַתְעוּפָה בְווִיֶּנָה</h1>
+          <p class="lead">Mercedes S / E / V Class • אמינות • דיוק • 24/7</p>
+          <p>ברוכים הבאים ל-Karakaya, שותף פרימיום שלך לשירותי הובלה משדה התעופה ונהגים בווינה. עם כלי רכב Mercedes מודרניים וליווי מנוסה ומקצועי, אנו מציעים לך נוחות וביטחון מקסימליים לכל נסיעה. בין אם זה עסקי או פנאי — אנו משגחים שתגיע בזמן ורגוע ליעדך. הזמן כעת באינטרנט או יצור איתנו קשר בטלפון. השירות שלנו זמין 24/7.</p>
+
+          <hr>
+
+          <div class="cta-container">
+            <a href="buchung.html" class="btn">הזמן עכשיו</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <p><strong>עוגיות</strong> — אנו משתמשים בעוגיות להשבחה. <a href="impressum.html">עוד</a></p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-reject" id="cookieReject">דחה</button>
+      <button class="cookie-btn cookie-btn-settings" id="cookieSettings">הגדרות</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">אישור</button>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+      <h2>הגדרות עוגיות</h2>
+      
+      <div class="cookie-setting cookie-setting-required">
+        <div class="cookie-setting-info">
+          <h3>עוגיות הכרחיות</h3>
+          <p>נדרשת לתפקידים בסיסיים של האתר</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>עוגיות ניתוח</h3>
+          <p>עזור לנו להבין כיצד אתה משתמש באתרנו</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>עוגיות שיווק</h3>
+          <p>משמש להצגת פרסומות מותאמות אישית</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-buttons">
+        <button class="cookie-modal-btn cookie-modal-btn-close" id="cookieModalClose">ביטול</button>
+        <button class="cookie-modal-btn cookie-modal-btn-save" id="cookieModalSave">שמור</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>שיטות תשלום מקובלות:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="תשלום במזומן">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxi & Special Rides — Karakaya Vienna</title>
+  <meta name="description" content="Taxi and special rides in Vienna with Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Airport Transfer</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Booking</a>
+        <a href="kontakt.html">Contact</a>
+        <a href="impressum.html">Imprint</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Switch languages">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/taxi.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="./taxi.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/taxi.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/taxi.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/taxi.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Taxi & Special Trips</h1>
+        <p>Flexible taxi services and special trips for individual requirements. We drive you anywhere — whether city tours, wedding transport or multiple stops.</p>
+
+        <h2>Our Taxi & Special Trip Offerings</h2>
+        <ul>
+          <li><strong>City Tours:</strong> Explore Vienna with comfortable transfers to all attractions</li>
+          <li><strong>Wedding & Event Transport:</strong> Elegant transportation for your special occasions</li>
+          <li><strong>Multi-Stop Tours:</strong> Visit multiple locations with flexible stops</li>
+          <li><strong>Business Trips:</strong> Reliable transportation for business travel within and outside Vienna</li>
+          <li><strong>Shopping & Errands:</strong> Driver and vehicle for your shopping and errand trips</li>
+          <li><strong>Custom Requests:</strong> We offer solutions for virtually any transportation need</li>
+        </ul>
+
+        <hr>
+
+        <h2>How Does It Work?</h2>
+        <p>Simply describe your request in the booking form or contact us directly by phone or email. Our specialists will provide you with a customized offer.</p>
+
+        <h2>Contact for Special Requests</h2>
+        <p><strong>Phone:</strong> <a href="tel:+4368120447876">+43 681 2044 7876</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+        <p>We look forward to your inquiry!</p>
+
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

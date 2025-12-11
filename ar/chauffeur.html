@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سائق خاص — Karakaya فيينا</title>
+  <meta name="description" content="خدمة السائق الخاص في فيينا مع Mercedes S و E و V Class.">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <style>
+    html { direction: rtl; }
+    body { direction: rtl; text-align: right; }
+    .nav { flex-direction: row-reverse; }
+    .lang-switch { flex-direction: row-reverse; }
+  </style>
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="flughafen.html">نقل المطار</a>
+        <a href="chauffeur.html">سائق خاص</a>
+        <a href="taxi.html">سيارة أجرة</a>
+        <a href="buchung.html">الحجز</a>
+        <a href="kontakt.html">جهات الاتصال</a>
+        <a href="impressum.html">معلومات</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="تغيير اللغة">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/chauffeur.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/chauffeur.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/chauffeur.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="./chauffeur.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/chauffeur.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>سائق خاص والمركبات</h1>
+        <p>خدمة حصرية للسائق في فيينا وجميع أنحاء النمسا. احجز سائقاً محترفاً للمناسبات التجارية أو الاحتفالات أو جولات السياحة.</p>
+
+        <h2>خدمة السائق الخاص لدينا</h2>
+        <p>تقدم خدمتنا المتميزة للسائق الخاص لك أقصى درجات المرونة لجميع احتياجات النقل الخاصة بك. سواء كان ذلك لاجتماع عمل أو مساء في المدينة أو جولات متعددة الأيام — سائقونا ذوو الخبرة منفردون وموثوق بهم ويضمنون راحتك المطلقة.</p>
+
+        <hr>
+
+        <h2>أسطول المركبات</h2>
+        <ul>
+          <li><strong>Mercedes S-Class:</strong> أقصى درجات الفخامة للرحلات الحصرية</li>
+          <li><strong>Mercedes E-Class:</strong> مريحة وأنيقة للمناسبات التجارية</li>
+          <li><strong>Mercedes V-Class:</strong> فسيحة للمجموعات والرحلات الطويلة</li>
+        </ul>
+
+        <hr>
+
+        <h2>الخدمات</h2>
+        <ul>
+          <li>سائقون محترفون ومنفردون ومهذبون</li>
+          <li>توصيل في الوقت المحدد في الوقت المفضل لديك</li>
+          <li>حجوزات ساعات مرنة من ساعة واحدة</li>
+          <li>سائقون يتحدثون الألمانية والإنجليزية</li>
+          <li>للطلبات الخاصة: اسأل عن التخصيصات</li>
+        </ul>
+
+        <h2>احجز خدمة السائق</h2>
+        <p>احجز مباشرة عبر الإنترنت أو اتصل بنا للحصول على طلبات مخصصة. جميع الأسعار شفافة وليس هناك رسوم مخفية.</p>
+        
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">احجز الآن</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karakaya — خدمات سيارة وتحويل المطار في فيينا</title>
+  <meta name="description" content="Karakaya Private Chauffeur & Taxi — نقل المطار، خدمات السائق، سيارات أجرة في فيينا. الدفع عبر الإنترنت.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="flughafen.html">نقل المطار</a>
+        <a href="chauffeur.html">سائق خاص</a>
+        <a href="taxi.html">سيارة أجرة</a>
+        <a href="buchung.html">الحجز</a>
+        <a href="kontakt.html">جهات الاتصال</a>
+        <a href="impressum.html">معلومات</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+      <!-- ← Wird automatisch gefüllt! -->
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('../images/logo-black.jpg') center calc(40% + top) / 70% auto no-repeat;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Karakaya — سائقك الحصري ونقل المطار في فيينا</h1>
+          <p class="lead">Mercedes S / E / V Class • موثوقية • الدقة • 24/7</p>
+          <p>مرحبا بك في Karakaya، شريكك المتميز لخدمات نقل المطار والسائق في فيينا. مع سيارات Mercedes الحديثة وسائقين محترفين ذوي خبرة، نقدم لك أقصى درجات الراحة والأمان لكل رحلة. سواء كانت رحلة عمل أو ترفيه — نضمن وصولك في الوقت المحدد واسترخاء إلى وجهتك. احجز الآن عبر الإنترنت أو اتصل بنا هاتفياً. خدمتنا متاحة على مدار الساعة.</p>
+
+          <hr>
+
+          <div class="cta-container">
+            <a href="buchung.html" class="btn">احجز الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <div class="cookie-content">
+      <p><strong>ملفات تعريف الارتباط</strong> — نستخدم الملفات لتحسين التجربة. <a href="impressum.html">المزيد</a></p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-reject" id="cookieReject">رفض</button>
+      <button class="cookie-btn cookie-btn-settings" id="cookieSettings">الإعدادات</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">موافق</button>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+      <h2>إعدادات ملفات تعريف الارتباط</h2>
+      
+      <div class="cookie-setting cookie-setting-required">
+        <div class="cookie-setting-info">
+          <h3>ملفات تعريف الارتباط الضرورية</h3>
+          <p>مطلوبة لوظائف الموقع الأساسية</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>ملفات تعريف الارتباط التحليلية</h3>
+          <p>تساعدنا على فهم كيفية استخدامك لموقعنا</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>ملفات تعريف الارتباط التسويكية</h3>
+          <p>تُستخدم لعرض الإعلانات الشخصية</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-buttons">
+        <button class="cookie-modal-btn cookie-modal-btn-close" id="cookieModalClose">إلغاء</button>
+        <button class="cookie-modal-btn cookie-modal-btn-save" id="cookieModalSave">حفظ</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>طرق الدفع المقبولة:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="الدفع النقدي">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

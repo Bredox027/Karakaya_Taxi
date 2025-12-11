@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airport Transfers — Karakaya Vienna</title>
+  <meta name="description" content="Airport transfer Vienna with Mercedes. Limousine, Minivan, First Class. Book now.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Airport Transfer</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Booking</a>
+        <a href="kontakt.html">Contact</a>
+        <a href="impressum.html">Imprint</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Switch languages">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/flughafen.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="./flughafen.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/flughafen.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/flughafen.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/flughafen.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Airport Transfers & Prices</h1>
+        <p>Reliable and comfortable airport transfers to and from Vienna Airport. We offer punctual pickup and drop-off services with professional drivers in premium vehicles.</p>
+
+        <h2>Vehicle Classes & Prices</h2>
+        <div class="price-grid">
+          <div class="price-card">
+            <h4>Limousine</h4>
+            <p>3 Passengers / 3 Luggage — <strong>€65</strong></p>
+            <p class="small">Mercedes E-Class, ideal for individuals and couples</p>
+          </div>
+          <div class="price-card">
+            <h4>Minivan</h4>
+            <p>7 Passengers / 6 Luggage — <strong>€85</strong></p>
+            <p class="small">Mercedes V-Class, perfect for groups and families</p>
+          </div>
+          <div class="price-card">
+            <h4>First Class</h4>
+            <p>2 Passengers / 3 Luggage — <strong>€110</strong></p>
+            <p class="small">Mercedes S-Class, for exclusive and business trips</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h2>Why Choose Karakaya for Your Airport Transfer?</h2>
+        <ul>
+          <li><strong>Punctuality:</strong> We know the best routes and drive you stress-free to your destination</li>
+          <li><strong>Premium Vehicles:</strong> All our vehicles are brand new and regularly maintained</li>
+          <li><strong>Professional Drivers:</strong> Experienced, courteous and discreet chauffeurs</li>
+          <li><strong>Transparent Prices:</strong> No hidden charges, fixed prices</li>
+          <li><strong>24/7 Availability:</strong> Available around the clock for you</li>
+        </ul>
+
+        <hr>
+
+        <h2>Cancellation Policy</h2>
+        <ul>
+          <li>Up to 24 hours before pickup: Free cancellation</li>
+          <li>Up to 12 hours before pickup: 50% fee</li>
+          <li>Up to 6 hours before pickup: 100% fee</li>
+        </ul>
+
+        <p class="muted">Trips outside the Vienna &lt;–&gt; Airport route are available upon request. Contact us for a personalized offer.</p>
+
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Accepted Payment Methods:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Cash Payment">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

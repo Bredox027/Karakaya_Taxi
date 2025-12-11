@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الحجز — Karakaya فيينا</title>
+  <meta name="description" content="احجز نقلك أو خدمة السائق لديك Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <style>
+    html { direction: rtl; }
+    body { direction: rtl; text-align: right; }
+    .nav { flex-direction: row-reverse; }
+    .lang-switch { flex-direction: row-reverse; }
+  </style>
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="flughafen.html">نقل المطار</a>
+        <a href="chauffeur.html">سائق خاص</a>
+        <a href="taxi.html">سيارة أجرة</a>
+        <a href="buchung.html">الحجز</a>
+        <a href="kontakt.html">جهات الاتصال</a>
+        <a href="impressum.html">معلومات</a>
+        <a class="cta" href="tel:+4368120447876"><bdi>☎️ +43 681 2044 7876</bdi></a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="تغيير اللغة">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/buchung.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/buchung.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/buchung.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="./buchung.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/buchung.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>الحجز</h1>
+        <p>ملء النموذج لحجز نقلك أو خدمة السائق.</p>
+
+        <div class="booking-container">
+          <form id="bookingForm">
+            <fieldset>
+              <legend>تفاصيل الرحلة</legend>
+              
+              <label for="rideType">نوع الرحلة *</label>
+              <select id="rideType" required>
+                <option value="">— يرجى الاختيار —</option>
+                <option value="flughafen">نقل المطار</option>
+                <option value="chauffeur">السائق الخاص (حجز بالساعة)</option>
+                <option value="taxi">سيارة أجرة / طلب خاص</option>
+              </select>
+
+              <label for="pickup">مكان الاستلام *</label>
+              <input id="pickup" type="text" placeholder="مثال: Stephansplatz 1" required>
+
+              <label for="pickupZip">الرمز البريدي لمكان الاستلام *</label>
+              <input id="pickupZip" type="text" placeholder="مثال: 1010" pattern="[0-9]{4}" required>
+
+              <label for="dropoff">وجهة الوصول *</label>
+              <input id="dropoff" type="text" placeholder="مثال: مطار فيينا" required>
+
+              <label for="dropoffZip">الرمز البريدي لوجهة الوصول *</label>
+              <input id="dropoffZip" type="text" placeholder="مثال: 1300" pattern="[0-9]{4}" required>
+
+              <div class="row">
+                <div>
+                  <label for="date">التاريخ *</label>
+                  <input id="date" type="date" required>
+                </div>
+                <div>
+                  <label for="time">الوقت *</label>
+                  <input id="time" type="time" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="pax">الركاب *</label>
+                  <input id="pax" type="number" min="1" value="1" required>
+                </div>
+                <div>
+                  <label for="luggage">الحقائب</label>
+                  <input id="luggage" type="number" min="0" value="0">
+                </div>
+              </div>
+
+              <label for="flight">رقم الرحلة / القطار (اختياري)</label>
+              <input id="flight" type="text" placeholder="مثال: OS1234 أو HB1234">
+
+              <label for="childseat">هل تحتاج إلى مقعد طفل؟ *</label>
+              <select id="childseat" required>
+                <option value="">— يرجى الاختيار —</option>
+                <option value="nein">لا</option>
+                <option value="ja">نعم (مقعد معزز)</option>
+              </select>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>المعلومات الشخصية</legend>
+
+              <label for="name">الاسم الأول والأخير *</label>
+              <input id="name" type="text" placeholder="مثال: أحمد محمد" required>
+
+              <label for="phone">الهاتف *</label>
+              <input id="phone" type="tel" placeholder="مثال: +43681..." required>
+
+              <label for="email">البريد الإلكتروني *</label>
+              <input id="email" type="email" placeholder="مثال: firstname@example.com" required>
+
+              <label for="notes">ملاحظات</label>
+              <textarea id="notes" rows="3" placeholder="معلومات إضافية..."></textarea>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>الدفع والسعر</legend>
+
+              <label for="payment">الدفع *</label>
+              <select id="payment" required>
+                <option value="">— يرجى الاختيار —</option>
+                <option value="online">الدفع عبر الإنترنت (بطاقة ائتمان / Apple Pay / Google Pay)</option>
+                <option value="card">الدفع ببطاقة مع السائق</option>
+                <option value="cash">الدفع نقداً</option>
+              </select>
+
+              <div class="price-box" id="priceBox">السعر: —</div>
+
+              <div class="actions">
+                <button type="button" class="btn" id="calculateBtn">حساب السعر</button>
+                <button type="submit" class="btn primary" id="bookBtn">احجز ادفع</button>
+              </div>
+
+              <div id="formMsg" class="form-msg"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

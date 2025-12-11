@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking — Karakaya Vienna</title>
+  <meta name="description" content="Book your transfer or chauffeur service with Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Airport Transfer</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Booking</a>
+        <a href="kontakt.html">Contact</a>
+        <a href="impressum.html">Imprint</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Switch languages">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/buchung.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="./buchung.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="../ru/buchung.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/buchung.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/buchung.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Booking</h1>
+        <p>Fill out the form to book your transfer or chauffeur service.</p>
+
+        <div class="booking-container">
+          <form id="bookingForm">
+            <fieldset>
+              <legend>Trip Details</legend>
+              
+              <label for="rideType">Ride Type *</label>
+              <select id="rideType" required>
+                <option value="">— Please select —</option>
+                <option value="flughafen">Airport Transfer</option>
+                <option value="chauffeur">Private Chauffeur (Hourly)</option>
+                <option value="taxi">Taxi / Special Request</option>
+              </select>
+
+              <label for="pickup">Pickup Location *</label>
+              <input id="pickup" type="text" placeholder="e.g. Stephansplatz 1" required>
+
+              <label for="pickupZip">Pickup Postal Code *</label>
+              <input id="pickupZip" type="text" placeholder="e.g. 1010" pattern="[0-9]{4}" required>
+
+              <label for="dropoff">Destination *</label>
+              <input id="dropoff" type="text" placeholder="e.g. Vienna Airport" required>
+
+              <label for="dropoffZip">Destination Postal Code *</label>
+              <input id="dropoffZip" type="text" placeholder="e.g. 1300" pattern="[0-9]{4}" required>
+
+              <div class="row">
+                <div>
+                  <label for="date">Date *</label>
+                  <input id="date" type="date" required>
+                </div>
+                <div>
+                  <label for="time">Time *</label>
+                  <input id="time" type="time" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="pax">Passengers *</label>
+                  <input id="pax" type="number" min="1" value="1" required>
+                </div>
+                <div>
+                  <label for="luggage">Luggage</label>
+                  <input id="luggage" type="number" min="0" value="0">
+                </div>
+              </div>
+
+              <label for="flight">Flight / Train Number (optional)</label>
+              <input id="flight" type="text" placeholder="e.g. OS1234 or HB1234">
+
+              <label for="childseat">Child Seat Needed? *</label>
+              <select id="childseat" required>
+                <option value="">— Please select —</option>
+                <option value="nein">No</option>
+                <option value="ja">Yes (Booster Seat)</option>
+              </select>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Personal Information</legend>
+
+              <label for="name">First Name, Last Name *</label>
+              <input id="name" type="text" placeholder="e.g. John Doe" required>
+
+              <label for="phone">Phone *</label>
+              <input id="phone" type="tel" placeholder="e.g. +43681..." required>
+
+              <label for="email">E‑Mail *</label>
+              <input id="email" type="email" placeholder="e.g. firstname@example.com" required>
+
+              <label for="notes">Notes</label>
+              <textarea id="notes" rows="3" placeholder="Additional information..."></textarea>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Payment & Price</legend>
+
+              <label for="payment">Payment *</label>
+              <select id="payment" required>
+                <option value="">— Please select —</option>
+                <option value="online">Online Payment (Credit Card / Apple Pay / Google Pay)</option>
+                <option value="card">Card Payment with Driver</option>
+                <option value="cash">Cash Payment</option>
+              </select>
+
+              <div class="price-box" id="priceBox">Price: —</div>
+
+              <div class="actions">
+                <button type="button" class="btn" id="calculateBtn">Calculate Price</button>
+                <button type="submit" class="btn primary" id="bookBtn">Book & Pay</button>
+              </div>
+
+              <div id="formMsg" class="form-msg"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

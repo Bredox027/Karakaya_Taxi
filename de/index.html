@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karakaya — Flughafen & Chauffeur Wien</title>
+  <meta name="description" content="Karakaya Private Chauffeur & Taxi — Flughafentransfer, Chauffeurservice, Taxi in Wien. Onlinezahlung möglich.">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <script src="../menu.js"></script>
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Flughafenfahrt</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Buchung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+      <!-- ← Wird automatisch gefüllt! -->
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('../images/logo-black.jpg') center calc(40% + top) / 70% auto no-repeat;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Karakaya — Ihr exklusiver Chauffeur & Flughafentransfer in Wien</h1>
+          <p class="lead">Mercedes S / E / V Klasse • Zuverlässig • Pünktlich • 24/7</p>
+          <p>Willkommen bei Karakaya, Ihrem Premium-Partner für Flughafentransfers und Chauffeurservices in Wien. Mit modernen Mercedes-Fahrzeugen und erfahrenen, professionellen Fahrern bieten wir Ihnen maximalen Komfort und Sicherheit für jeden Transfer. Ob geschäftlich oder privat — wir sorgen dafür, dass Sie pünktlich und entspannt Ihr Ziel erreichen. Buchen Sie jetzt einfach online oder kontaktieren Sie uns telefonisch. Unser Service ist rund um die Uhr verfügbar.</p>
+
+          <hr>
+
+          <div class="cta-container">
+            <a href="buchung.html" class="btn">Jetzt buchen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Akzeptierte Zahlungsmethoden:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Barzahlung">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <div class="cookie-banner-inner">
+      <div class="cookie-content">
+        <p><strong>Cookie-Einwilligung</strong><br>
+        Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie unserer <a href="impressum.html#cookies">Cookie-Richtlinie</a> zu. Sie können Ihre Einstellungen jederzeit ändern.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="cookie-btn cookie-btn-reject" id="cookieReject">Ablehnen</button>
+        <button class="cookie-btn cookie-btn-settings" id="cookieSettings">Einst.</button>
+        <button class="cookie-btn cookie-btn-accept" id="cookieAccept">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+      <h2>Cookie-Einstellungen</h2>
+      
+      <div class="cookie-setting cookie-setting-required">
+        <div class="cookie-setting-info">
+          <h3>Notwendige Cookies</h3>
+          <p>Erforderlich für die Grundfunktionen der Website</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Analytics-Cookies</h3>
+          <p>Helfen uns zu verstehen, wie Sie unsere Website nutzen</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-setting">
+        <div class="cookie-setting-info">
+          <h3>Marketing-Cookies</h3>
+          <p>Werden verwendet, um personalisierte Werbung zu zeigen</p>
+        </div>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal-buttons">
+        <button class="cookie-modal-btn cookie-modal-btn-close" id="cookieModalClose">Abbrechen</button>
+        <button class="cookie-modal-btn cookie-modal-btn-save" id="cookieModalSave">Speichern</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

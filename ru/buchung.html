@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бронирование — Karakaya Вена</title>
+  <meta name="description" content="Забронируйте ваш трансфер или услугу водителя у Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="flughafen.html">Трансфер из аэропорта</a>
+        <a href="chauffeur.html">Личный водитель</a>
+        <a href="taxi.html">Такси</a>
+        <a href="buchung.html">Бронирование</a>
+        <a href="kontakt.html">Контакты</a>
+        <a href="impressum.html">Информация</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Выбрать язык">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/buchung.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/buchung.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="./buchung.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/buchung.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/buchung.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Бронирование</h1>
+        <p>Заполните форму, чтобы забронировать ваш трансфер или услугу водителя.</p>
+
+        <div class="booking-container">
+          <form id="bookingForm">
+            <fieldset>
+              <legend>Детали поездки</legend>
+              
+              <label for="rideType">Тип поездки *</label>
+              <select id="rideType" required>
+                <option value="">— Пожалуйста выберите —</option>
+                <option value="flughafen">Трансфер из аэропорта</option>
+                <option value="chauffeur">Личный водитель (почасовое бронирование)</option>
+                <option value="taxi">Такси / Специальный запрос</option>
+              </select>
+
+              <label for="pickup">Место подхвата *</label>
+              <input id="pickup" type="text" placeholder="например, Stephansplatz 1" required>
+
+              <label for="pickupZip">Почтовый индекс подхвата *</label>
+              <input id="pickupZip" type="text" placeholder="например, 1010" pattern="[0-9]{4}" required>
+
+              <label for="dropoff">Место доставки *</label>
+              <input id="dropoff" type="text" placeholder="например, Аэропорт Вены" required>
+
+              <label for="dropoffZip">Почтовый индекс доставки *</label>
+              <input id="dropoffZip" type="text" placeholder="например, 1300" pattern="[0-9]{4}" required>
+
+              <div class="row">
+                <div>
+                  <label for="date">Дата *</label>
+                  <input id="date" type="date" required>
+                </div>
+                <div>
+                  <label for="time">Время *</label>
+                  <input id="time" type="time" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="pax">Пассажиры *</label>
+                  <input id="pax" type="number" min="1" value="1" required>
+                </div>
+                <div>
+                  <label for="luggage">Багаж</label>
+                  <input id="luggage" type="number" min="0" value="0">
+                </div>
+              </div>
+
+              <label for="flight">Номер рейса / поезда (опционально)</label>
+              <input id="flight" type="text" placeholder="например, OS1234 или HB1234">
+
+              <label for="childseat">Требуется детское кресло? *</label>
+              <select id="childseat" required>
+                <option value="">— Пожалуйста выберите —</option>
+                <option value="nein">Нет</option>
+                <option value="ja">Да (детское кресло)</option>
+              </select>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Личная информация</legend>
+
+              <label for="name">Имя, Фамилия *</label>
+              <input id="name" type="text" placeholder="например, Иван Иванов" required>
+
+              <label for="phone">Телефон *</label>
+              <input id="phone" type="tel" placeholder="например, +43681..." required>
+
+              <label for="email">Email *</label>
+              <input id="email" type="email" placeholder="например, firstname@example.com" required>
+
+              <label for="notes">Примечания</label>
+              <textarea id="notes" rows="3" placeholder="Дополнительная информация..."></textarea>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Оплата и цена</legend>
+
+              <label for="payment">Оплата *</label>
+              <select id="payment" required>
+                <option value="">— Пожалуйста выберите —</option>
+                <option value="online">Онлайн оплата (кредитная карта / Apple Pay / Google Pay)</option>
+                <option value="card">Оплата картой водителю</option>
+                <option value="cash">Наличная оплата</option>
+              </select>
+
+              <div class="price-box" id="priceBox">Цена: —</div>
+
+              <div class="actions">
+                <button type="button" class="btn" id="calculateBtn">Рассчитать цену</button>
+                <button type="submit" class="btn primary" id="bookBtn">Забронировать и оплатить</button>
+              </div>
+
+              <div id="formMsg" class="form-msg"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../booking.js"></script>
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

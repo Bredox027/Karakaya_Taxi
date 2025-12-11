@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Такси и специальные поездки — Karakaya Вена</title>
+  <meta name="description" content="Услуги такси и специальные поездки в Вене с Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="flughafen.html">Трансфер из аэропорта</a>
+        <a href="chauffeur.html">Личный водитель</a>
+        <a href="taxi.html">Такси</a>
+        <a href="buchung.html">Бронирование</a>
+        <a href="kontakt.html">Контакты</a>
+        <a href="impressum.html">Информация</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch">
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" title="Выбрать язык">🌐</button>
+          <div class="lang-dropdown-content">
+            <a href="../de/taxi.html"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="../en/taxi.html"><span class="flag">🇬🇧</span> English</a>
+            <a href="./taxi.html"><span class="flag">🇷🇺</span> Русский</a>
+            <a href="../ar/taxi.html"><span class="flag">🇸🇦</span> العربية</a>
+            <a href="../he/taxi.html"><span class="flag">🇮🇱</span> עברית</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Такси и специальные поездки</h1>
+        <p>Гибкие услуги такси и специальные поездки для индивидуальных требований. Мы повезем вас куда угодно — будь то экскурсии по городу, транспорт на свадьбу или несколько остановок.</p>
+
+        <h2>Наши предложения такси и специальных поездок</h2>
+        <ul>
+          <li><strong>Городские экскурсии:</strong> Исследуйте Вену с комфортными трансферами ко всем достопримечательностям</li>
+          <li><strong>Свадебный и событийный транспорт:</strong> Элегантный транспорт для ваших особых случаев</li>
+          <li><strong>Туры с несколькими остановками:</strong> Посетите несколько мест с гибкими остановками</li>
+          <li><strong>Деловые поездки:</strong> Надежный транспорт для деловых путешествий в пределах и за пределами Вены</li>
+          <li><strong>Покупки и дела:</strong> Водитель и автомобиль для ваших покупок и поручений</li>
+          <li><strong>Специальные запросы:</strong> Мы предлагаем решения практически для всех потребностей в транспорте</li>
+        </ul>
+
+        <hr>
+
+        <h2>Как это работает?</h2>
+        <p>Просто опишите свой запрос в форме бронирования или свяжитесь с нами напрямую по телефону или электронной почте. Наши специалисты предоставят вам индивидуальное предложение.</p>
+
+        <h2>Контакт для специальных запросов</h2>
+        <p><strong>Телефон:</strong> <a href="tel:+4368120447876">+43 681 2044 7876</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@karakayataxi.at">info@karakayataxi.at</a></p>
+        <p>Мы ждем вашего запроса!</p>
+
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">Забронировать сейчас</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

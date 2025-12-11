@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buchung — Karakaya Wien</title>
+  <meta name="description" content="Buchen Sie Ihren Transfer oder Chauffeurservice bei Karakaya.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Flughafenfahrt</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Buchung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Buchung</h1>
+        <p>Füllen Sie das Formular aus, um Ihren Transfer oder Chauffeurservice zu buchen.</p>
+
+        <div class="booking-container">
+          <form id="bookingForm">
+            <fieldset>
+              <legend>Fahrtdetails</legend>
+              
+              <label for="rideType">Fahrtart *</label>
+              <select id="rideType" required>
+                <option value="">— Bitte wählen —</option>
+                <option value="flughafen">Flughafenfahrt</option>
+                <option value="chauffeur">Private Chauffeur (Zeitbuchung)</option>
+                <option value="taxi">Taxi / Sonderanfrage</option>
+              </select>
+
+              <h3 style="margin-top: 24px; font-size: 1.1rem; color: var(--primary);">Abholort</h3>
+              
+              <label for="pickup">Straße *</label>
+              <input id="pickup" type="text" placeholder="z. B. Stephansplatz" required>
+
+              <div class="row">
+                <div>
+                  <label for="pickupNo">Hausnummer *</label>
+                  <input id="pickupNo" type="text" placeholder="z. B. 1" required>
+                </div>
+                <div>
+                  <label for="pickupStair">Stiege (optional)</label>
+                  <input id="pickupStair" type="text" placeholder="z. B. A">
+                </div>
+              </div>
+
+              <label for="pickupZip">Postleitzahl *</label>
+              <input id="pickupZip" type="text" placeholder="z. B. 1010" pattern="[0-9]{4}" required>
+
+              <h3 style="margin-top: 24px; font-size: 1.1rem; color: var(--primary);">Zielort</h3>
+
+              <label for="dropoff">Straße *</label>
+              <input id="dropoff" type="text" placeholder="z. B. Flughafen Wien" required>
+
+              <div class="row">
+                <div>
+                  <label for="dropoffNo">Hausnummer *</label>
+                  <input id="dropoffNo" type="text" placeholder="z. B. 1" required>
+                </div>
+                <div>
+                  <label for="dropoffStair">Stiege (optional)</label>
+                  <input id="dropoffStair" type="text" placeholder="z. B. A">
+                </div>
+              </div>
+
+              <label for="dropoffZip">Postleitzahl *</label>
+              <input id="dropoffZip" type="text" placeholder="z. B. 1300" pattern="[0-9]{4}" required>
+
+              <h3 style="margin-top: 24px; font-size: 1.1rem;">Fahrtzeit</h3>
+
+              <div class="row">
+                <div>
+                  <label for="date">Datum *</label>
+                  <input id="date" type="date" required>
+                </div>
+                <div>
+                  <label for="time">Uhrzeit *</label>
+                  <input id="time" type="time" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="pax">Personen *</label>
+                  <input id="pax" type="number" min="1" value="1" required>
+                </div>
+                <div>
+                  <label for="luggage">Koffer</label>
+                  <input id="luggage" type="number" min="0" value="0">
+                </div>
+              </div>
+
+              <label for="flight">Flugnummer / Zugnummer (optional)</label>
+              <input id="flight" type="text" placeholder="z. B. OS1234 oder HB1234">
+
+              <label for="childseat">Kindersitz benötigt? *</label>
+              <select id="childseat" required>
+                <option value="">— Bitte wählen —</option>
+                <option value="nein">Nein</option>
+                <option value="ja">Ja (Sitzerhöhung)</option>
+              </select>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Persönliche Daten</legend>
+
+              <label for="name">Vorname, Nachname *</label>
+              <input id="name" type="text" placeholder="z. B. Max Mustermann" required>
+
+              <label for="phone">Telefon *</label>
+              <input id="phone" type="tel" placeholder="z. B. +43681..." required>
+
+              <label for="email">E‑Mail *</label>
+              <input id="email" type="email" placeholder="z. B. vorname@example.com" required>
+
+              <label for="notes">Bemerkungen</label>
+              <textarea id="notes" rows="3" placeholder="Zusätzliche Informationen..."></textarea>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend>Bezahlung & Preis</legend>
+
+              <label for="payment">Bezahlung *</label>
+              <select id="payment" required>
+                <option value="">— Bitte wählen —</option>
+                <option value="online">Online bezahlen (Kreditkarte / Apple Pay / Google Pay)</option>
+                <option value="card">Kartenzahlung beim Fahrer</option>
+                <option value="cash">Barzahlung</option>
+              </select>
+
+              <div class="price-box" id="priceBox">Preis: —</div>
+
+              <div class="actions">
+                <button type="button" class="btn" id="calculateBtn">Preis berechnen</button>
+                <button type="submit" class="btn primary" id="bookBtn">Buchen & Bezahlen</button>
+              </div>
+
+              <div id="formMsg" class="form-msg"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Akzeptierte Zahlungsmethoden:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Barzahlung">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="module">
+    import './../../booking.js';
+    import './../../menu.js';
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

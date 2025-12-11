@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Chauffeur — Karakaya Wien</title>
+  <meta name="description" content="Private Chauffeurservice in Wien mit Mercedes S, E und V Klasse.">
+  <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img class="logo logo--dark" src="../images/logo-black.jpg" alt="Karakaya Logo">
+        <img class="logo logo--light" src="../images/logo-white.jpg" alt="Karakaya Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="flughafen.html">Flughafenfahrt</a>
+        <a href="chauffeur.html">Private Chauffeur</a>
+        <a href="taxi.html">Taxi</a>
+        <a href="buchung.html">Buchung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a class="cta" href="tel:+4368120447876">☎️ +43 681 2044 7876</a>
+      </nav>
+
+      <button class="burger-menu" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="lang-switch"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Private Chauffeur & Fahrzeuge</h1>
+        <p>Exklusiver Chauffeurservice für Wien und ganz Österreich. Buchen Sie einen professionellen Fahrer für geschäftliche Anlässe, Veranstaltungen oder Sightseeing-Touren.</p>
+
+        <h2>Unser Private Chauffeur Service</h2>
+        <p>Unser Premium-Chauffeurservice bietet Ihnen maximale Flexibilität für alle Ihre Transportbedürfnisse. Egal ob für ein geschäftliches Meeting, einen Abend in der Stadt oder mehrtägige Touren — unsere erfahrenen Chauffeure sind diskret, zuverlässig und sorgen für Ihren absoluten Komfort.</p>
+
+        <hr>
+
+        <h2>Fahrzeugflotte</h2>
+        <ul>
+          <li><strong>Mercedes S-Klasse:</strong> Ultimativer Luxus für exklusive Fahrten</li>
+          <li><strong>Mercedes E-Klasse:</strong> Komfortabel und elegant für geschäftliche Anlässe</li>
+          <li><strong>Mercedes V-Klasse:</strong> Geräumig für Gruppen und längere Fahrten</li>
+        </ul>
+
+        <hr>
+
+        <h2>Leistungen</h2>
+        <ul>
+          <li>Professionelle, diskrete und höfliche Fahrer</li>
+          <li>Pünktliche Abholung zu Ihrer bevorzugten Zeit</li>
+          <li>Flexible Stundenbuchungen ab 1 Stunde</li>
+          <li>Deutschsprachige und englischsprachige Fahrer</li>
+          <li>Für spezielle Wünsche: Fragen Sie nach Anpassungen</li>
+        </ul>
+
+        <h2>Buchung Chauffeurservice</h2>
+        <p>Buchen Sie direkt online oder kontaktieren Sie uns für individualisierte Anfragen. Alle Preise sind transparent und es gibt keine versteckten Gebühren.</p>
+        
+        <div class="cta-container">
+          <a href="buchung.html" class="btn">Jetzt buchen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="payment-methods">
+        <p><strong>Akzeptierte Zahlungsmethoden:</strong></p>
+        <div class="payment-icons">
+          <div class="payment-icon" title="Apple Pay">
+            <img src="../images/applepay.svg" alt="Apple Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Google Pay">
+            <img src="../images/googlepay.svg" alt="Google Pay" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Mastercard">
+            <img src="../images/mastercard.svg" alt="Mastercard" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Maestro">
+            <img src="../images/maestro.svg" alt="Maestro" loading="lazy">
+          </div>
+          <div class="payment-icon" title="American Express">
+            <img src="../images/amex.png" alt="American Express" loading="lazy">
+          </div>
+          <div class="payment-icon" title="PayPal">
+            <img src="../images/paypal.png" alt="PayPal" loading="lazy">
+          </div>
+          <div class="payment-icon" title="Barzahlung">
+            💵
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© <span id="year"></span> Karakaya Private Chauffeur & Taxi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../menu.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
